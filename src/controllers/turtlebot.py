@@ -23,7 +23,7 @@ class TurtleController(Node):
     def __update_current_turtle1_pose(self, _pose):
         self.__current_turtle1_pose = _pose
         if self.__set_point_turtle1_pose is None:
-            self.__set_point_turtle1_pose =  PoseData(self.__target_path.current_position().x + 5.0, self.__target_path.current_position().y + 5.0)
+            self.__set_point_turtle1_pose =  PoseData(self.__target_path.current_position().x + 5.5, self.__target_path.current_position().y + 5.5)
             self.get_logger().info("Set point: {}".format(_pose))
             self.get_logger().info("Target: {}".format(self.__set_point_turtle1_pose))
             self.get_logger().info("Current: {}".format(self.__current_turtle1_pose))
